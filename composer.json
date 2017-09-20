@@ -1,6 +1,6 @@
 {
     "name": "albertoesquitino/ticketit",
-    "description": "A simple helpdesk tickets system for Laravel 5.1 which integrates smoothly with Laravel default users and auth system",
+    "description": "Sistema tickets laravel",
     "type": "laravel-package",
     "keywords": ["laravel","helpdesk", "ticket", "support"],
     "require": {
