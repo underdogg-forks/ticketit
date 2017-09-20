@@ -11,12 +11,12 @@
                             {!! link_to_route(config('ticketit.main_route').'.reopen', trans('ticketit::lang.reopen-ticket'), $ticket->id,
                                                 ['class' => 'btn btn-success']) !!}
                     @endif
-                    @if(Kordy\Ticketit\Models\Agent::isAgent())
+                    @if(Albertoesquitino\Ticketit\Models\Agent::isAgent())
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ticket-edit-modal">
                             {{ trans('ticketit::lang.btn-edit')  }}
                         </button>
                     @endif
-                    @if(Kordy\Ticketit\Models\Agent::isAdmin())
+                    @if(Albertoesquitino\Ticketit\Models\Agent::isAdmin())
 {{-- // Existing: JS Prompt: --}}
                         @if(config('ticketit.delete_modal_type') == 'builtin')
                             {!! link_to_route(
@@ -103,12 +103,12 @@
     </div>
 </div>
 
-    @if(Kordy\Ticketit\Models\Agent::isAgent())
+    @if(Albertoesquitino\Ticketit\Models\Agent::isAgent())
         @include('ticketit::tickets.edit')
     @endif
 
 {{-- // OR; Modal Window: 2/2 --}}    
-    @if(Kordy\Ticketit\Models\Agent::isAdmin())
+    @if(Albertoesquitino\Ticketit\Models\Agent::isAdmin())
         @include('ticketit::tickets.partials.modal-delete-confirm')
     @endif
 {{-- // END Modal Window: 2/2 --}}     

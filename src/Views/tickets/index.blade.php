@@ -21,7 +21,7 @@
         </h4>
     @else
         <div id="message"></div>
-        @if(Kordy\Ticketit\Models\Agent::isAdmin() || Kordy\Ticketit\Models\Agent::isAgent())
+        @if(Albertoesquitino\Ticketit\Models\Agent::isAdmin() || Albertoesquitino\Ticketit\Models\Agent::isAgent())
             @include('ticketit::tickets.partials.index_agent')
         @else
             @include('ticketit::tickets.partials.index_user')

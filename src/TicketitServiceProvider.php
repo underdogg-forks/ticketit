@@ -1,11 +1,11 @@
 <?php
-namespace Kordy\Ticketit;
+namespace Albertoesquitino\Ticketit;
 
 use Collective\Html\FormFacade as Form;
 use Illuminate\Support\ServiceProvider;
-use Kordy\Ticketit\Controllers\NotificationsController;
-use Kordy\Ticketit\Models\Comment;
-use Kordy\Ticketit\Models\Ticket;
+use Albertoesquitino\Ticketit\Controllers\NotificationsController;
+use Albertoesquitino\Ticketit\Models\Comment;
+use Albertoesquitino\Ticketit\Models\Ticket;
 
 class TicketitServiceProvider extends ServiceProvider
 {

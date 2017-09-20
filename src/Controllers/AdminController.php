@@ -1,5 +1,5 @@
 <?php
-namespace Kordy\Ticketit\Controllers;
+namespace Albertoesquitino\Ticketit\Controllers;
 
 use Illuminate\Http\Request;
 

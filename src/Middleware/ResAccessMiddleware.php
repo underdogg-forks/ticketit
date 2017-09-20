@@ -1,9 +1,9 @@
 <?php
 
-namespace Kordy\Ticketit\Middleware;
+namespace Albertoesquitino\Ticketit\Middleware;
 
 use \Closure;
-use Kordy\Ticketit\Models\Agent;
+use Albertoesquitino\Ticketit\Models\Agent;
 
 class ResAccessMiddleware
 {
@@ -40,7 +40,7 @@ class ResAccessMiddleware
         if (Agent::isTicketOwner($ticket_id))
             return $next($request);
 
-        return redirect()->action('\Kordy\Ticketit\Controllers\TicketsController@index')
+        return redirect()->action('\Albertoesquitino\Ticketit\Controllers\TicketsController@index')
             ->with('warning', 'You are not permitted to access this page!');
     }
 

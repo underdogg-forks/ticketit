@@ -12,7 +12,7 @@
             </div>
             <div class="modal-body">
                 <div class="col-sm-12">
-                    {{--@if(Kordy\Ticketit\Models\Agent::isAdmin())--}}
+                    {{--@if(Albertoesquitino\Ticketit\Models\Agent::isAdmin())--}}
                     <div class="form-group">
                         {!! Form::text('subject', $ticket->subject, ['class' => 'form-control', 'required']) !!}
                     </div>

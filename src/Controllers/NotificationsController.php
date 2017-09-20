@@ -1,10 +1,10 @@
 <?php
-namespace Kordy\Ticketit\Controllers;
+namespace Albertoesquitino\Ticketit\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
-use Kordy\Ticketit\Models\Comment;
-use Kordy\Ticketit\Models\Ticket;
+use Albertoesquitino\Ticketit\Models\Comment;
+use Albertoesquitino\Ticketit\Models\Ticket;
 
 class NotificationsController extends Controller
 {

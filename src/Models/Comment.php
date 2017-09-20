@@ -1,6 +1,6 @@
 <?php
 
-namespace Kordy\Ticketit\Models;
+namespace Albertoesquitino\Ticketit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,7 @@ class Comment extends Model {
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function ticket() {
-        return $this->belongsTo('Kordy\Ticketit\Models\Ticket', 'ticket_id');
+        return $this->belongsTo('Albertoesquitino\Ticketit\Models\Ticket', 'ticket_id');
     }
 
     /**
